@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Card</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          
+        </div>
+        <!--  -->
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <h2>Avengers : Infinity War</h2>
+        <section class="recipe-hero">
+          <img
+            src="./assets/avengers.jpg"
+            class="img recipe-hero-img"
+            height="700"
+            width="400"
+          />
+          <article class="recipe-info">
+            <h2>About the Movie</h2>
+            <p>
+              As the Avengers and their allies have continued to protect the world from challenges too great for any one hero to bear, a new enemy has emerged from the cosmic shadows: Thanos. His objective as a cosmic ruler is to collect all six Infinity Stones, objects of immeasurable power, and use them to impose his twisted will on all of reality. Everything the Avengers have fought for has culminated in this moment, when the fate of Earth and life itself has never been more unclear.
+            </p>
+            <hr />
+            <p class="recipe-tags">
+              <button class="video">
+                play trailer<i class="fa-regular fa-play"></i>
+              </button>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <article></article>
+      </div>
+      <div class="player" style="display: none">
+        <video
+          class="player__video viewer"
+          src="./assets/Marvel Studios Avengers Infinity War Official Trailer.mp4"
+        ></video>
+
+        <div class="player__controls">
+          <div class="progress">
+            <div class="progress__filled"></div>
+          </div>
+          <button class="player__button toggle" title="Toggle Play">►</button>
+          <input
+            type="range"
+            name="volume"
+            class="player__slider"
+            min="0"
+            max="1"
+            step="0.05"
+            value="1"
+          />
+          <input
+            type="range"
+            name="playbackRate"
+            class="player__slider"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="1"
+          />
+          <button data-skip="-10" class="player__button">« 10s</button>
+          <button data-skip="25" class="player__button">25s »</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
